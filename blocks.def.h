@@ -6,11 +6,11 @@ static const Block blocks[] = {
 	/* separator */
 	{"[1]", "printf ''",									-1,			0},		
 	/* network connection status */
-	{"[4]  [7]", "nmcli -t -f name connection show --active",					120,			0},
+	{"[6]  [7]", "nmcli -t -f name connection show --active",					120,			0},
 	/* separator */
 	{"[1]", "printf ''",									-1,			0},		
 	/* volume %  */
-	{"[5]  [7]", "pamixer --get-volume",							5,			0},
+	{"[4]  [7]", "pamixer --get-volume",							5,			0},
 	/* separator */
 	{"[1]", "printf ''",									-1,			0},		
 	/* current time  */
