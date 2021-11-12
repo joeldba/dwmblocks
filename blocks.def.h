@@ -6,7 +6,7 @@ static const Block blocks[] = {
 	/* separator */
 	{"[1]", "printf ''",									-1,			0},		
 	/* network connection status */
-	{"[6]  [7]", "nmcli -t -f name connection show --active",					120,			0},
+	{"[6]  [7]", "sudo wpa_cli status | grep ^ssid= | cut -d '=' -f 2-",			120,			0},
 	/* separator */
 	{"[1]", "printf ''",									-1,			0},		
 	/* volume %  */
